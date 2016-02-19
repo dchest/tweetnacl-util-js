@@ -1,0 +1,28 @@
+{
+  "name": "tweetnacl-util",
+  "version": "0.13.3",
+  "homepage": "https://dchest.github.io/tweetnacl-util-js",
+  "authors": [
+    "TweetNaCl.js Contributors"
+  ],
+  "description": "String encoding utilitlies extracted from TweetNaCl.js",
+  "main": "nacl-util.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "base64",
+    "utf8",
+    "string",
+    "encoding"
+  ],
+  "license": "Public domain",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "package.json"
+  ]
+}

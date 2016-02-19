@@ -1,0 +1,31 @@
+{
+  "name": "tweetnacl-util",
+  "version": "0.13.3",
+  "description": "String encoding utilitlies extracted from TweetNaCl.js",
+  "main": "nacl-util.js",
+  "scripts": {
+    "build": "uglifyjs nacl-util.js -c -m -o nacl-util.min.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dchest/tweetnacl-util-js.git"
+  },
+  "keywords": [
+    "base64",
+    "utf8",
+    "string",
+    "encoding"
+  ],
+  "author": "TweetNaCl-js contributors",
+  "license": "Public domain",
+  "bugs": {
+    "url": "https://github.com/dchest/tweetnacl-util-js/issues"
+  },
+  "homepage": "https://github.com/dchest/tweetnacl-util-js",
+  "devDependencies": {
+    "uglify-js": "^2.6.1"
+  },
+  "browser": {
+    "buffer": false
+  }
+}
