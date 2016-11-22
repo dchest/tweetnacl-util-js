@@ -3,6 +3,7 @@
   "version": "0.13.3",
   "description": "String encoding utilitlies extracted from TweetNaCl.js",
   "main": "nacl-util.js",
+  "types": "nacl-util.d.ts",
   "scripts": {
     "build": "uglifyjs nacl-util.js -c -m -o nacl-util.min.js"
   },
