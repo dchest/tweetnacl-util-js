@@ -1,6 +1,6 @@
 {
   "name": "tweetnacl-util",
-  "version": "0.13.3",
+  "version": "0.13.4",
   "description": "String encoding utilitlies extracted from TweetNaCl.js",
   "main": "nacl-util.js",
   "types": "nacl-util.d.ts",
