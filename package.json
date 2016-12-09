@@ -1,6 +1,6 @@
 {
   "name": "tweetnacl-util",
-  "version": "0.13.4",
+  "version": "0.13.5",
   "description": "String encoding utilitlies extracted from TweetNaCl.js",
   "main": "nacl-util.js",
   "types": "nacl-util.d.ts",
@@ -18,7 +18,7 @@
     "encoding"
   ],
   "author": "TweetNaCl-js contributors",
-  "license": "Public domain",
+  "license": "Unlicense",
   "bugs": {
     "url": "https://github.com/dchest/tweetnacl-util-js/issues"
   },
