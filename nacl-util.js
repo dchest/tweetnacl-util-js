@@ -31,7 +31,7 @@
 
     var validateBase64 = function(s) {
       if (!(/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(s))) {
-        throw new TypeError("invalid encoding");
+        throw new TypeError('invalid encoding');
       }
     }
 
