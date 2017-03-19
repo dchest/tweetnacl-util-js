@@ -6,7 +6,8 @@
   "types": "nacl-util.d.ts",
   "scripts": {
     "build": "uglifyjs nacl-util.js -c -m -o nacl-util.min.js",
-    "test": "tape test/*.js"
+    "test": "tape test/*.js; yarn run build-browser-test",
+    "build-browser-test": "browserify test/test.js > test/browser/bundle.js"
   },
   "repository": {
     "type": "git",
@@ -25,11 +26,11 @@
   },
   "homepage": "https://github.com/dchest/tweetnacl-util-js",
   "devDependencies": {
+    "browserify": "^14.1.0",
     "tape": "^4.6.3",
     "uglify-js": "^2.6.1"
   },
   "browser": {
     "buffer": false
-  },
-  "dependencies": {}
+  }
 }
