@@ -12,7 +12,7 @@ something that is considered important compared to the simplicity and size of
 implementation. For example, they don't work under
 React Native.
 
-Instead of this package, I strongly recommend using my StableLib packages:
+Instead of this package, I strongly recommend using my [StableLib](https://github.com/StableLib/stablelib) packages:
 
 * [@stablelib/utf8](https://www.stablelib.com/modules/_utf8_utf8_.html) for UTF-8
   encoding/decoding (note that the names of operations are reversed compared to
