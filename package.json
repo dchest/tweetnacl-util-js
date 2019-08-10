@@ -29,8 +29,5 @@
     "browserify": "^14.1.0",
     "tape": "^4.6.3",
     "uglify-js": "^2.6.1"
-  },
-  "browser": {
-    "buffer": false
   }
 }
