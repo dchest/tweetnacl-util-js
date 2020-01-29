@@ -26,9 +26,9 @@
   },
   "homepage": "https://github.com/dchest/tweetnacl-util-js",
   "devDependencies": {
-    "browserify": "^14.1.0",
-    "tape": "^4.6.3",
-    "uglify-js": "^2.6.1"
+    "browserify": "^16.5.0",
+    "tape": "^4.13.0",
+    "uglify-js": "^3.7.6"
   },
   "browser": {
     "buffer": false
