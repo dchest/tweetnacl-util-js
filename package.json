@@ -2,12 +2,16 @@
   "name": "tweetnacl-util",
   "version": "0.15.1",
   "description": "String encoding utilitlies extracted from TweetNaCl.js",
-  "main": "nacl-util.js",
+  "type": "module",
   "types": "nacl-util.d.ts",
+  "main": "nacl-util.js",
+  "exports": {
+    ".": "./nacl-util.js",
+    "./*": "./*"
+  },
   "scripts": {
-    "build": "uglifyjs nacl-util.js -c -m -o nacl-util.min.js",
-    "test": "tape test/*.js; yarn run build-browser-test",
-    "build-browser-test": "browserify test/test.js > test/browser/bundle.js"
+    "test": "node test",
+    "test-browser": "ecstatic --cache no-cache --port 7357 test"
   },
   "repository": {
     "type": "git",
@@ -26,11 +30,8 @@
   },
   "homepage": "https://github.com/dchest/tweetnacl-util-js",
   "devDependencies": {
-    "browserify": "^16.5.0",
-    "tape": "^4.13.0",
-    "uglify-js": "^3.7.6"
-  },
-  "browser": {
-    "buffer": false
+    "ecstatic": "^4.1.4",
+    "es-module-shims": "^0.7.1",
+    "tap-esm": "^1.4.1"
   }
 }

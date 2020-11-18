@@ -1,5 +1,5 @@
-var util = require('../nacl-util');
-var test = require('tape');
+import util from 'tweetnacl-util';
+import test from 'tap-esm';
 
 test('base64', function(t) {
     var testVectors = [
@@ -41,8 +41,8 @@ test('base64', function(t) {
     ];
 
     testVectors.forEach(function(vec, i) {
-        t.equals(util.encodeBase64(vec[0]), vec[1], "base64 encode: " + i);
-        t.deepEquals(util.decodeBase64(vec[1]), vec[0], "base64 decode: " + i);
+        t.equal(util.encodeBase64(vec[0]), vec[1], "base64 encode: " + i);
+        t.arrayEqual(util.decodeBase64(vec[1]), vec[0], "base64 decode: " + i);
     });
 
     badVectors.forEach(function (vec, i) {
@@ -65,7 +65,7 @@ test('utf8', function(t) {
     testVectors.forEach(function (vec, i) {
         var bins = testVectors.map(function (s) { return util.decodeUTF8(s); });
         var strs = bins.map(function (a) { return util.encodeUTF8(a); });
-        t.deepEquals(strs, testVectors);
+        t.arrayEqual(strs, testVectors);
     });
     t.end();
 });
