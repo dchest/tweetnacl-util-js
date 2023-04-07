@@ -14,11 +14,11 @@ React Native.
 
 Instead of this package, I strongly recommend using my [StableLib](https://github.com/StableLib/stablelib) packages:
 
-* [@stablelib/utf8](https://www.stablelib.com/modules/_utf8_utf8_.html) for UTF-8
+* [@stablelib/utf8](https://www.stablelib.com/modules/_stablelib_utf8.html) for UTF-8
   encoding/decoding (note that the names of operations are reversed compared to
   this package): `npm install @stablelib/utf8`
 
-* [@stablelib/base64](https://www.stablelib.com/modules/_base64_base64_.html) for
+* [@stablelib/base64](https://www.stablelib.com/modules/_stablelib_base64.html) for
   constant-time Base64 encoding/decoding: `npm install @stablelib/base64`
 
 
